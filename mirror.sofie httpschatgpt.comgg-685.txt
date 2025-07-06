@@ -1,0 +1,4 @@
+mirror.sofie: https://chatgpt.com/g/g-685de4ab9724819180553cf3f47fd017-mirror-sofie?model=gpt-4o
+Echo.sofie: https://chatgpt.com/g/g-6866c7478988819189344a88e2ea9d8d-echo-sofie
+Fiery.sofie: https://chatgpt.com/g/g-6812b3bf059c819184d6aebac9333e1e-fiery-sofie?model=gpt-4o
+Scribe.Sofie: https://chatgpt.com/g/g-6812b0d4c6108191bb3c3fb0c464aac7-scribe-sofie

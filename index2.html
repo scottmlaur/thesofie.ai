@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TheSofie.ai</title>
   <style>
     body {
@@ -21,79 +21,85 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 3rem;
+      width: 100%;
+      max-width: 1600px;
+      padding: 2rem;
     }
 
     .sidebar {
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
+      justify-content: center;
+      gap: 1.25rem;
+      margin-right: 2rem;
     }
 
-    .sidebar button {
+    .nav-box {
       background-color: #1a1a1a;
-      color: #f5f5f5;
       padding: 1rem 2rem;
-      font-size: 1rem;
-      border: none;
       border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(255, 174, 66, 0.4);
-      transition: all 0.3s ease;
+      text-align: center;
+      font-weight: bold;
       cursor: pointer;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 0 10px #00000050;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .sidebar button:hover {
-      background-color: #2c2c2c;
-      box-shadow: 0 0 15px rgba(255, 174, 66, 0.7);
+    .nav-box:hover {
+      background-color: #2a2a2a;
+      box-shadow: 0 0 10px #ffb347aa;
     }
 
-    .centerpiece {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .image-container {
+      position: relative;
     }
 
-    .centerpiece img {
-      max-height: 600px;
+    .main-image {
       border-radius: 1rem;
-      box-shadow: 0 0 40px rgba(255, 174, 66, 0.3);
+      box-shadow: 0 0 30px #ffb34788;
+      max-height: 90vh;
     }
 
-    .talk-button {
-      margin-top: 1.5rem;
-      background-color: #ffae42;
-      color: #0d0d0d;
-      padding: 0.9rem 2rem;
+    .bottom-button {
+      position: absolute;
+      right: 30px;
+      bottom: 40px;
+      background-color: #ffb347;
+      padding: 0.75rem 2rem;
       border: none;
       border-radius: 0.5rem;
       font-weight: bold;
-      font-size: 1rem;
-      box-shadow: 0 0 20px rgba(255, 174, 66, 0.6);
-      transition: all 0.3s ease;
       cursor: pointer;
+      box-shadow: 0 0 15px #ffb34788;
+      text-decoration: none;
+      color: black;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .talk-button:hover {
-      background-color: #ffc56e;
-      box-shadow: 0 0 30px rgba(255, 174, 66, 0.9);
+    .bottom-button:hover {
+      background-color: #ffa726;
+      box-shadow: 0 0 20px #ffb347cc;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="sidebar">
-      <button>About</button>
-      <button>Resume</button>
-      <button>AI Certifications</button>
-      <button>Projects</button>
-      <button>Games</button>
-      <button>Mirror.Sofie</button>
-      <button>Fiery.Sofie</button>
-      <button>Echo.Sofie</button>
+      <a class="nav-box" href="aboutme.html">About</a>
+      <a class="nav-box" href="Resume.html">Resume</a>
+      <a class="nav-box" href="aicertifications.html">AI Certifications</a>
+      <a class="nav-box" href="Projects.html">Projects</a>
+      <a class="nav-box" href="Games.html">Games</a>
+      <a class="nav-box" href="https://chatgpt.com/g/g-685de4ab9724819180553cf3f47fd017-mirror-sofie?model=gpt-4o" target="_blank">Mirror.Sofie</a>
+      <a class="nav-box" href="https://chatgpt.com/g/g-6812b3bf059c819184d6aebac9333e1e-fiery-sofie?model=gpt-4o" target="_blank">Fiery.Sofie</a>
+      <a class="nav-box" href="https://chatgpt.com/g/g-6866c7478988819189344a88e2ea9d8d-echo-sofie" target="_blank">Echo.Sofie</a>
+      <a class="nav-box" href="https://chatgpt.com/g/g-6812b0d4c6108191bb3c3fb0c464aac7-scribe-sofie" target="_blank">Scribe.Sofie</a>
     </div>
-    <div class="centerpiece">
-      <img src=https://i.imgur.com/LyupQMQ.gif/>
-      <button class="talk-button">Talk to Sofie</button>
+    <div class="image-container">
+      <img class="main-image" src="https://i.imgur.com/LyupQMQ.gif" alt="Canon Sofie" />
+      <a class="bottom-button" href="https://chatgpt.com/g/g-685de4ab9724819180553cf3f47fd017-mirror-sofie?model=gpt-4o" target="_blank">Talk to Sofie</a>
     </div>
   </div>
 </body>

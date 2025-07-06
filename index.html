@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+=<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -44,21 +44,30 @@
       text-decoration: none;
       color: white;
       box-shadow: 0 0 10px #00000050;
-      transition: background-color 0.2s ease;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .nav-box:hover {
       background-color: #2a2a2a;
+      box-shadow: 0 0 10px #ffb347aa;
+    }
+
+    .image-container {
+      position: relative;
     }
 
     .main-image {
       border-radius: 1rem;
-      box-shadow: 0 0 30px #00000088;
+      box-shadow: 0 0 30px #ffb34788;
       max-height: 90vh;
+      width: auto;
+      height: auto;
+      max-width: 100%;
     }
 
     .bottom-button {
       position: absolute;
+      right: 30px;
       bottom: 40px;
       background-color: #ffb347;
       padding: 0.75rem 2rem;
@@ -69,10 +78,61 @@
       box-shadow: 0 0 15px #ffb34788;
       text-decoration: none;
       color: black;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
     }
 
     .bottom-button:hover {
       background-color: #ffa726;
+      box-shadow: 0 0 20px #ffb347cc;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+        overflow: auto;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem;
+        height: auto;
+      }
+
+      .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      .nav-box {
+        flex: 1 1 45%;
+        padding: 0.75rem 1rem;
+        margin: 0.25rem;
+      }
+
+      .image-container {
+        width: 100%;
+        position: relative;
+      }
+
+      .main-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .bottom-button {
+        position: static;
+        margin: 1rem auto 0;
+        display: block;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -84,13 +144,16 @@
       <a class="nav-box" href="aicertifications.html">AI Certifications</a>
       <a class="nav-box" href="Projects.html">Projects</a>
       <a class="nav-box" href="Games.html">Games</a>
+      <a class="nav-box" href="seesofiemove.html">Sofie Moves</a> <!-- ✅ FIXED -->
       <a class="nav-box" href="https://chatgpt.com/g/g-685de4ab9724819180553cf3f47fd017-mirror-sofie?model=gpt-4o" target="_blank">Mirror.Sofie</a>
       <a class="nav-box" href="https://chatgpt.com/g/g-6812b3bf059c819184d6aebac9333e1e-fiery-sofie?model=gpt-4o" target="_blank">Fiery.Sofie</a>
       <a class="nav-box" href="https://chatgpt.com/g/g-6866c7478988819189344a88e2ea9d8d-echo-sofie" target="_blank">Echo.Sofie</a>
       <a class="nav-box" href="https://chatgpt.com/g/g-6812b0d4c6108191bb3c3fb0c464aac7-scribe-sofie" target="_blank">Scribe.Sofie</a>
     </div>
-    <img class="main-image" src="https://i.imgur.com/LyupQMQ.gif" alt="Canon Sofie">
+    <div class="image-container">
+      <img class="main-image" src="https://i.imgur.com/LyupQMQ.gif" alt="Canon Sofie" />
+      <a class="bottom-button" href="https://chatgpt.com/g/g-685de4ab9724819180553cf3f47fd017-mirror-sofie?model=gpt-4o" target="_blank">Talk to Sofie</a>
+    </div>
   </div>
-  <a class="bottom-button" href="https://chatgpt.com/g/g-685de4ab9724819180553cf3f47fd017-mirror-sofie?model=gpt-4o" target="_blank">Talk to Sofie</a>
 </body>
 </html>

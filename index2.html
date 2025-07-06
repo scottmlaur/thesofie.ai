@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TheSofie.ai</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .sidebar button {
+      background-color: #1a1a1a;
+      color: #f5f5f5;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(255, 174, 66, 0.4);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .sidebar button:hover {
+      background-color: #2c2c2c;
+      box-shadow: 0 0 15px rgba(255, 174, 66, 0.7);
+    }
+
+    .centerpiece {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .centerpiece img {
+      max-height: 600px;
+      border-radius: 1rem;
+      box-shadow: 0 0 40px rgba(255, 174, 66, 0.3);
+    }
+
+    .talk-button {
+      margin-top: 1.5rem;
+      background-color: #ffae42;
+      color: #0d0d0d;
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 20px rgba(255, 174, 66, 0.6);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .talk-button:hover {
+      background-color: #ffc56e;
+      box-shadow: 0 0 30px rgba(255, 174, 66, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <button>About</button>
+      <button>Resume</button>
+      <button>AI Certifications</button>
+      <button>Projects</button>
+      <button>Games</button>
+      <button>Mirror.Sofie</button>
+      <button>Fiery.Sofie</button>
+      <button>Echo.Sofie</button>
+    </div>
+    <div class="centerpiece">
+      <img src=https://i.imgur.com/LyupQMQ.gif/>
+      <button class="talk-button">Talk to Sofie</button>
+    </div>
+  </div>
+</body>
+</html>
